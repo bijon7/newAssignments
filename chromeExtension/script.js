@@ -7,8 +7,12 @@ async function fetchdata() {
     }
   };
 
-  fetch('https://concerts-artists-events-tracker.p.rapidapi.com/location?name=kelowna&minDate=%3CREQUIRED%3E&maxDate=2023-12-31&page=1', options)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
+  const res = await fetch('https://concerts-artists-events-tracker.p.rapidapi.com/location?name=kelowna&minDate=%3CREQUIRED%3E&maxDate=2023-12-31&page=1', options);
+
+  const record = await res.json();
+
+
+  //     .then(response => response.json())
+  //     .then(response => console.log(response))
+  //     .catch(err => console.error(err));
 }
