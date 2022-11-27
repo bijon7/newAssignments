@@ -11,7 +11,9 @@ async function fetchdata() {
 
   const record = await res.json();
 
+  console.log("record", record);
 
+  document.getElementById("concerts").innerHTML = record.data.map(item => item.name)
   //     .then(response => response.json())
   //     .then(response => console.log(response))
   //     .catch(err => console.error(err));
