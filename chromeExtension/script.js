@@ -13,7 +13,7 @@ async function fetchdata() {
 
   console.log("record", record);
 
-  document.getElementById("concerts").innerHTML = record.data.map(item => item.name)
+  document.getElementById("concerts").innerHTML = record.data.map(item => `<li>item.name</li>`.join(""))
   //     .then(response => response.json())
   //     .then(response => console.log(response))
   //     .catch(err => console.error(err));
