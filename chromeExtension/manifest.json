@@ -1,5 +1,10 @@
 {
   "name": "Upcoming Kelowna concerts",
   "version": "1.0.0",
-  "description": "This a chrome extension to look up concerts in Kelowna"
+  "description": "This a chrome extension to look up concerts in Kelowna",
+  "author": "Zubaer Mahmud",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Upcoming Kelowna concerts"
+  }
 }
