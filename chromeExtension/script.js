@@ -18,3 +18,4 @@ async function fetchdata() {
   //     .then(response => console.log(response))
   //     .catch(err => console.error(err));
 }
+fetchdata();
