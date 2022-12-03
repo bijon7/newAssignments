@@ -33,6 +33,13 @@ var calculate = function (s) {
       sum += positive ? calculatedNum : 0 - calculatedNum;
       i = j;
     }
+    if (s[i].match(/\d/)) numStr += s[i];
+    if (s[i].match(/\+|\-/)) {
+      sum += positive ? Number(numStr) : 0 - Number(numStr);
+      numStr = '';
+      positive = s[i] === '+';
+    }
+    i++;
 
   }
 };
