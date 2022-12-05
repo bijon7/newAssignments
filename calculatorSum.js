@@ -42,6 +42,9 @@ var calculate = function (s) {
     i++;
 
   }
+  if (numStr.length) sum += positive ? Number(numStr) : 0 - Number(numStr);
+
+  return sum;
 };
 
 
