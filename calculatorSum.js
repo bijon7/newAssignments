@@ -47,4 +47,6 @@ var calculate = function (s) {
   return sum;
 };
 
+console.log(calculate("2 + 3"));
+console.log(calculate("5 - 1"));
 
