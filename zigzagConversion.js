@@ -16,12 +16,12 @@ var convert = function (s, numRows) {
   let reverse = false;
   let count = 0
 
-  // prepare rows
   for (let i = 0; i < numRows; i++) rows[i] = [];
-  // reverse the push flow when reaching turning points
+  // reverse the direction of row when hitting the bottom and top row.
   for (let i = 0; i < s.length; i++) {
     rows[count].push(s[i]);
     reverse ? count-- : count++;
+    if (count === numRows - 1 || count === 0) reverse = !reverse;
 
   }
 
