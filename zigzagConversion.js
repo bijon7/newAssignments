@@ -24,6 +24,9 @@ var convert = function (s, numRows) {
     if (count === numRows - 1 || count === 0) reverse = !reverse;
 
   }
+  // coverts the array which holds multiple arrays as elements back to a string.
+  return rows.reduce((converted, cur) => converted + cur.join(''), '');
 
 };
+console.log(convert("paypalishiring", 3))
 
