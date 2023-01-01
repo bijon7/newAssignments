@@ -28,5 +28,12 @@ var convert = function (s, numRows) {
   return rows.reduce((converted, cur) => converted + cur.join(''), '');
 
 };
-console.log(convert("paypalishiring", 3))
 
+console.log(convert("paypalishiring", 3));
+
+//"thisisright" writeen in zigzag
+// // T   I   G
+//    H S S I H
+//    I   R   T
+
+console.log(convert("thisisright", 3));
