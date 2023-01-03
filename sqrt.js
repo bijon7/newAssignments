@@ -2,6 +2,9 @@
  * @param {number} x
  * @return {number}
  */
+// Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.
+//Any built-in exponent function or operator cannot be used.
+
 var mySqrt = function (x) {
   if (x === 0) {
     return 0;
