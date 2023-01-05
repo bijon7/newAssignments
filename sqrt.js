@@ -14,7 +14,12 @@ var mySqrt = function (x) {
     if (y * y === x) {
       return y;
     }
+    else if (y * y < x && (y + 1) * (y + 1) > x) {
+      return y;
+
+    }
 
   }
-
 };
+
+console.log(mySqrt(4));
