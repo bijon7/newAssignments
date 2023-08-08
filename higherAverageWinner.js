@@ -12,3 +12,13 @@ const calcAverage = (firstScore, secondScore, thirdScore) => {
 //score.
 let scoreDolphins = calcAverage(44, 23, 71);
 let scoreKoalas = calcAverage(65, 54, 49);
+
+const checkWinner = function (avgDolphins, avgKoalas) {
+  if (avgDolphins >= (2 * avgKoalas)) {
+    console.log("Dolphins win!");
+  }
+  else if (avgKoalas >= (2 * avgDolphins)) {
+    console.log("Koalas win!")
+  }
+  else { console.log("No team wins...") }
+}
