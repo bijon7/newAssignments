@@ -21,4 +21,5 @@ const checkWinner = function (avgDolphins, avgKoalas) {
     console.log("Koalas win!")
   }
   else { console.log("No team wins...") }
-}
+};
+checkWinner(scoreDolphins, scoreKoalas);
