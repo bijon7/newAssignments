@@ -1,6 +1,6 @@
 /*Takes average scores of two teams, each of which competes three times in a particular event as part of a competition. A team only wins if its average 
 score is double of the other team. Otherwise, there 
-is no winner
+is no winner.
 */
 
 
@@ -17,7 +17,7 @@ let scoreKoalas = calcAverage(65, 54, 49);
 
 
 //Calculates winner between two values based on the fact if one value is at least twice
-//the the other value.  
+//the the other value. 
 const checkWinner = function (avgDolphins, avgKoalas) {
   if (avgDolphins >= (2 * avgKoalas)) {
     console.log("Dolphins win!");
