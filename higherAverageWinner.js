@@ -10,6 +10,10 @@ const calcAverage = (firstScore, secondScore, thirdScore) => {
 
 }
 
+const totalScore = (firstScore, secondScore, thirdScore) => {
+  return (firstScore + secondScore + thirdScore)
+}
+
 // Values added for both teams for calculating average
 //score.
 let scoreDolphins = calcAverage(44, 23, 71);
